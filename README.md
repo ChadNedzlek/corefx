@@ -53,7 +53,7 @@ More libraries are coming soon (the overall list of items we currently plan to m
 
 |Component|Description|
 |---------|-----------|
-|**System.&#8203;Collections**<br/>[![MyGet Package](https://img.shields.io/myget/dotnet-core/v/System.Collections.svg)](https://www.myget.org/gallery/dotnet-core)|<span style="font-size:smaller">Provides classes that define generic collections, which allow developers to create strongly-typed collections.</span>|
+|**System.&#8203;Collections**<br/>[![MyGet Package](https://img.shields.io/myget/dotnet-core/v/System.Collections.svg)](https://www.myget.org/gallery/dotnet-core)|<sub style="font-size:smaller">Provides classes that define generic collections, which allow developers to create strongly-typed collections.</sub>|
 |**System.Collections.Concurrent**<br/>[![MyGet Package](https://img.shields.io/myget/dotnet-core/v/System.Collections.Concurrent.svg)](https://www.myget.org/gallery/dotnet-core)|<sub>Provides a set of thread-safe collection types, instances of which may be used concurrently from multiple threads.</sub>|
 |**System.Collections.Immutable**<br/>[![MyGet Package](https://img.shields.io/nuget/vpre/System.Collections.Immutable.svg)](http://www.nuget.org/packages/System.Collections.Immutable/)|<sub>Provides a set of immutable collection types that are safe to use concurrently.</sub>|
 |**System.Collections.NonGeneric**<br/>[![MyGet Package](https://img.shields.io/myget/dotnet-core/v/System.Collections.NonGeneric.svg)](https://www.myget.org/gallery/dotnet-core)|<sub>Provides classes that define various collections of objects, such as ArrayList and Hashtable. _These collections exist in .NET Core primarily for backwards compatibility and generally should be avoided when writing new code_.</sub>|
