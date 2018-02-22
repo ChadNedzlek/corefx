@@ -67,6 +67,7 @@
     <HelixSource Condition="'$(HelixSource)'=='' And '$(IsOfficial)'=='' And '$(TestProduct)'!='' And '$(Branch)'!=''">pr/$(TestProduct)/$(Branch)/</HelixSource>
     <HelixSource Condition="'$(HelixSource)'==''">pr/unknown/</HelixSource>
 
+
     <!-- Local path for storing submission-related files -->
     <HelixLogFolder>$(ArchivesRoot)</HelixLogFolder>
 
@@ -76,6 +77,9 @@
     <BuildMoniker Condition="'$(IsOfficial)'=='true' And '$(ProductBuildId)'!=''">$(ProductBuildId)</BuildMoniker>
     <HelixArchLabel>$(ArchGroup)</HelixArchLabel>
     <HelixConfigLabel>$(ConfigurationGroup)</HelixConfigLabel>
+
+    <!-- If we have a ProductBuildId, that means re-spins are an option, so use the OfficialBuildId to differentiate attempts -->
+    <HelixAttempt Condition="'$(ProductBuildId)'!=''">$(OfficialBuildId)</HelixAttempt>
   </PropertyGroup>
 
   <Target Name="CoreFXPreCloudBuild" >
